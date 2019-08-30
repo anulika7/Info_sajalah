@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <h:outputStylesheet name="/css/Latar.css"/>
+        <h:outputStylesheet name="/css/Layoutnya.css"/>
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+        <div id="top">
+            <ui:insert name="top"> 
+                <h1 align="center" style="color: orange">JUST FOR My_SHOWCASE</h1>                
+                <h:form>
+                    <p:commandButton value="LOGIN"  icon="ui-icon-star"/>
+                </h:form>
+                <p:separator/>
+
+                <div class="topnav" id="myTopnav">
+                    <a class="active" href="#"><i class="fa fa-home"></i><p:spacer/><p:spacer/><p:spacer/><p:spacer/>Beranda</a>
+                    <a href="#"><i class="fa fa-desktop"><p:spacer/><p:spacer/><p:spacer/><p:spacer/>News</i></a> 
+                    <a href="#"><i class="fa fa-book"></i><p:spacer/><p:spacer/><p:spacer/><p:spacer/>Tentang Kami</a> 
+                    <a href="#"><i class="fa fa-street-view"></i><p:spacer/><p:spacer/><p:spacer/><p:spacer/>Kontak</a>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+            </ui:insert>
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">
+                <div class="ui-g">
+                    <div class="ui-g-12">  
+                        <div id="slider">
+                            <figure>
+                                <h:graphicImage name="/image/jsf1.jpg" height="480px" width="90%"/>
+                                <h:graphicImage name="/image/jsf3.jpg" height="480px" width="90%"/>
+                                <h:graphicImage name="/image/koleksi1.jpg" height="480px" width="90%"/>
+                                <h:graphicImage name="/image/koleksi2.jpg" height="480px" width="90%"/>
+                                <h:graphicImage name="/image/jsf4.jpg" height="480px" width="90%"/>
+                            </figure>
+                        </div>                      
+                    </div>
+                    <div class="ui-g-12">
+                        <h1 align="center">LITERATUR, DISKUSI DAN STRATEGI PEMBELAJARAN, 
+                            SARANA MENUMBUHKAN KREATIVITAS<br/>
+                        </h1>
+                    </div>
+                </div>
+
+            </ui:insert>
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">
+
+                <div class="ui-g">                   
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h:outputLink onclick="window.open('http://www.primefaces.org/')">
+                            <h:graphicImage name="/picture/primefaces.jpg" height="100px" style="width: 100%"/>
+                        </h:outputLink>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h:outputLink onclick="window.open('http://www.javaserverfaces.org/')">
+                            <h:graphicImage name="/picture/jsf.jpg" height="100px" style="width: 100%"/>
+                        </h:outputLink>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h:outputLink onclick="window.open('http://hibernate.org/')"> 
+                            <h:graphicImage name="/picture/java1.png" height="100px" style="width: 100%"/>
+                        </h:outputLink>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h:outputLink onclick="window.open('https://netbeans.org/')"> 
+                            <h:graphicImage name="/picture/java2.png" height="100px" style="width: 100%"/>
+                        </h:outputLink>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h4 align="center">Vendor<br/>Software<br/>Supported<br/>Powered<br/>By<br/>
+                            JAVA TECHNOLOGY</h4>
+                    </div>
+                    <div class="ui-g-12 ui-md-6 ui-lg-2">
+                        <h:graphicImage name="/picture/meetoh.jpg" height="100px" style="width: 100%"/>
+                    </div>
+                </div>
+
+                <div class="ui-g">
+                    <div class="ui-g-12" align="right">
+                        <p:commandButton value=" KEMBALI  KE  ATAS " onclick="window.scrollTo(0, 0)"
+                                         icon="ui-icon-arrowthick-1-n"/>
+                    </div>
+                    <div class="ui-g-12" align="center"> 
+                        &copy; 2017_@*G4uzt054*@_
+                    </div>
+                </div>
+            </ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
