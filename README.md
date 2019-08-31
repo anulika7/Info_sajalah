@@ -1,5 +1,6 @@
 # Info_sajalah
-Aplikasi dengan bahasa pemograman Java
+Aplikasi dengan bahasa pemograman Java.
+Java Responsive Web (Java Server Faces dengan integrasi Primefaces dan Bootstrap)
 Jika ingin mencaoba di perangkat anda 
 Pilih folder dist dan ambil file dengan ekstensi war
 Pastikan perangkat anda sudah terinstall JDK versi 8
