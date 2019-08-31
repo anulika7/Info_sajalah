@@ -1,5 +1,5 @@
 # Info_sajalah
-AAplikasi dengan bahasa pemogramana Java
+Aplikasi dengan bahasa pemogramana Java
 Jika ingin mencaoba di perangkat anda 
 Pilih folder dist dan ambil file dengan ekstensi war
 Pastikan perangkat anda sudah terinstall JDK versi 8
